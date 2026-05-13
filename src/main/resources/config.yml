@@ -1,0 +1,261 @@
+database:
+  type: SQLITE
+  autosave-seconds: 120
+  sqlite:
+    filename: playerdata.db
+    pool-size: 1
+  mysql:
+    host: 127.0.0.1
+    port: 3306
+    database: marissettings
+    username: root
+    password: ''
+    pool-size: 10
+    use-ssl: false
+
+settings-gui:
+  title: '&8ѕᴇᴛᴛɪɴɢѕ'
+  gui-slots: 36
+  cooldown:
+    enabled: true
+    duration: 0.5
+    message: ''
+  status:
+    'on': '&#80FF00&lON'
+    'off': '&#FF0000&lOFF'
+  items:
+    public_chat:
+      slot: 0
+      material: OAK_SIGN
+      display-name: '&#08FB7Bᴘᴜʙʟɪᴄ ᴄʜᴀᴛ'
+      lore: '&fCurrently: %status%'
+      feature: PUBLIC_CHAT
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true
+    private_message:
+      slot: 1
+      material: DARK_OAK_SIGN
+      display-name: '&#08FB7Bᴘʀɪᴠᴀᴛᴇ ᴍᴇꜱꜱᴀɢᴇꜱ'
+      lore: '&fCurrently: %status%'
+      feature: PRIVATE_MESSAGE
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true
+    hotbar_server_messages:
+      slot: 2
+      material: CRIMSON_SIGN
+      display-name: '&#08FB7Bʜᴏᴛʙᴀʀ ꜱᴇʀᴠᴇʀ ᴍᴇꜱꜱᴀɢᴇꜱ'
+      lore: '&fCurrently: %status%'
+      feature: HOTBAR_SERVER_MESSAGES
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true
+    pay_alerts:
+      slot: 3
+      material: CHERRY_SIGN
+      display-name: '&#08FB7Bᴘᴀʏ ᴀʟᴇʀᴛꜱ'
+      lore: '&fCurrently: %status%'
+      feature: PAY_ALERTS
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true
+    chat_server_message:
+      slot: 4
+      material: WARPED_SIGN
+      display-name: '&#08FB7Bᴄʜᴀᴛ ꜱᴇʀᴠᴇʀ ᴍᴇꜱꜱᴀɢᴇꜱ'
+      lore: '&fCurrently: %status%'
+      feature: CHAT_SERVER_MESSAGE
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true
+    auction_toggle:
+      slot: 5
+      material: ACACIA_SIGN
+      display-name: '&#08FB7Bᴀᴜᴄᴛɪᴏɴ ᴀʟᴇʀᴛꜱ'
+      lore: '&fCurrently: %status%'
+      feature: AUCTION_TOGGLE
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true
+    totem_particles:
+      slot: 9
+      material: TOTEM_OF_UNDYING
+      display-name: '&#08FB7Bᴛᴏᴛᴇᴍ ᴘᴀʀᴛɪᴄʟᴇ'
+      lore: '&fCurrently: %status%'
+      feature: TOTEM_PARTICLES
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true
+    explosion_particles:
+      slot: 10
+      material: TNT
+      display-name: '&#08FB7Bᴇxᴘʟᴏꜱɪᴏɴ ᴘᴀʀᴛɪᴄʟᴇꜱ'
+      lore: '&fCurrently: %status%'
+      feature: EXPLOSION_PARTICLES
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true
+    explosion_sounds:
+      slot: 11
+      material: GOAT_HORN
+      display-name: '&#08FB7Bᴇxᴘʟᴏꜱɪᴏɴ ꜱᴏᴜɴᴅꜱ'
+      lore: '&fCurrently: %status%'
+      feature: EXPLOSION_SOUNDS
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true
+    auction_fast_buy:
+      slot: 12
+      material: GOLD_INGOT
+      display-name: '&#08FB7Bǫᴜᴄɪᴋ ᴀᴜᴄᴛɪᴏɴ ʙᴜʏ'
+      lore: '&fCurrently: %status%'
+      feature: AUCTION_FAST_BUY
+      sound: BLOCK_LEVER_CLICK
+      permission: marissettings.fastbuy
+      default: false
+    chainmail_spawn:
+      slot: 13
+      material: CHAINMAIL_HELMET
+      display-name: '&#08FB7Bᴄʜᴀɪɴᴍᴀɪʟ ᴏɴ ʀᴇꜱᴘᴀᴡɴ'
+      lore: '&fCurrently: %status%'
+      feature: CHAINMAIL_SPAWN
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true
+    disable_mob_spawn:
+      slot: 18
+      material: ZOMBIE_HEAD
+      display-name: '&#08FB7Bᴅɪꜱᴀʙʟᴇ ᴍᴏʙ ꜱᴘᴀᴡɴ'
+      lore: '&fCurrently: %status%'
+      feature: DISABLE_MOB_SPAWN
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: false
+    player_visibility:
+      slot: 19
+      material: PLAYER_HEAD
+      display-name: '&#08FB7Bᴘʟᴀʏᴇʀ ᴠɪꜱɪʙʟɪᴛʏ'
+      lore: '&fCurrently: %status%'
+      feature: PLAYER_VISIBILITY
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true
+    command_scoreboard:
+      slot: 20
+      material: LECTERN
+      display-name: '&#08FB7Bꜱᴄᴏʀᴇʙᴏᴀʀᴅ'
+      lore: '&fCurrently: %status%'
+      feature: COMMAND
+      command: sb
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true
+    tpagui_toggle:
+      slot: 21
+      material: FEATHER
+      display-name: '&#08FB7Bᴛᴘᴀ ᴍᴇɴᴜ'
+      lore: '&fCurrently: %status%'
+      feature: TPAGUI_TOGGLE
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true
+    sound_notifications:
+      slot: 22
+      material: MUSIC_DISC_RELIC
+      display-name: '&#08FB7Bꜱᴏᴜɴᴅ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ'
+      lore: '&fCurrently: %status%'
+      feature: SOUND_NOTIFICATIONS
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true
+    order_notification:
+      slot: 23
+      material: MAP
+      display-name: '&#08FB7Bᴏʀᴅᴇʀ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ'
+      lore: '&fCurrently: %status%'
+      feature: ORDER_NOTIFICATION
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true
+    auction_fast_sell:
+      slot: 24
+      material: NETHERITE_INGOT
+      display-name: '&#08FB7Bǫᴜɪᴄᴋ ᴀᴜᴄᴛɪᴏɴ sᴇʟʟ'
+      lore: '&fCurrently: %status%'
+      feature: AUCTION_FAST_SELL
+      sound: BLOCK_LEVER_CLICK
+      permission: marissettings.fastsell
+      default: false
+    duel_request:
+      slot: 27
+      material: DIAMOND_SWORD
+      display-name: '&#08FB7Bᴅᴜᴇʟ ʀᴇqᴜᴇꜱᴛ'
+      lore: '&fCurrently: %status%'
+      feature: REQUEST_DUEL
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true
+    tpa_toggle:
+      slot: 28
+      material: ENDER_PEARL
+      display-name: '&#08FB7Bᴛᴘᴀ ʀᴇqᴜᴇꜱᴛꜱ'
+      lore: '&fCurrently: %status%'
+      feature: TPA_TOGGLE
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true
+    tpahere_toggle:
+      slot: 29
+      material: ENDER_EYE
+      display-name: '&#08FB7Bᴛᴘᴀ ʜᴇʀᴇ ʀᴇqᴜᴇꜱᴛꜱ'
+      lore: '&fCurrently: %status%'
+      feature: TPAHERE_TOGGLE
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true
+    team_toggle:
+      slot: 30
+      material: SHIELD
+      display-name: '&#08FB7Bᴛᴇᴀᴍ ɪɴᴠɪᴛᴇꜱ'
+      lore: '&fCurrently: %status%'
+      feature: TEAM_TOGGLE
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true
+    pay_toggle:
+      slot: 31
+      material: EMERALD
+      display-name: '&#08FB7Bᴘᴀʏᴍᴇɴᴛꜱ'
+      lore: '&fCurrently: %status%'
+      feature: PAY_TOGGLE
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true
+    team_chat:
+      slot: 32
+      material: BELL
+      display-name: '&#08FB7Bᴛᴇᴀᴍ ᴄʜᴀᴛ'
+      lore: '&fCurrently: %status%'
+      feature: TEAM_CHAT
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: false
+    worth_toggle:
+      slot: 33
+      material: LIME_CANDLE
+      display-name: '&#08FB7Bᴡᴏʀᴛʜ ᴅɪꜱᴘʟᴀʏ'
+      lore: '&fCurrently: %status%'
+      feature: WORTHT_TOGGLE
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true
+    duel_after_song:
+      slot: 34
+      material: NOTE_BLOCK
+      display-name: '&#08FB7Bᴀꜰᴛᴇʀ ᴅᴜᴇʟ ꜱᴏɴɢꜱ'
+      lore: '&fCurrently: %status%'
+      feature: AFTER_SONG_DUELS
+      sound: BLOCK_LEVER_CLICK
+      permission: ''
+      default: true

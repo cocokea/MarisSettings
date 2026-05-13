@@ -1,0 +1,9 @@
+messages:
+  player-only: "&cOnly players can use this command."
+  no-permission: "&cYou do not have permission to use this setting."
+  unknown-feature: "&#FF5555Unknown setting: &#FFFFFF%feature%"
+  setting-enabled: "&#00FF70Enabled &#FFFFFF%feature%"
+  setting-disabled: "&#FF5555Disabled &#FFFFFF%feature%"
+  settings-reloaded: "&#00FF70MarisSettings reloaded."
+  command-dispatched: "&#00FF70Command dispatched."
+  legacy-command-redirect: "&#FFD166This toggle moved to &#FFFFFF/settings"
