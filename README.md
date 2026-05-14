@@ -13,34 +13,34 @@ MarisSettings is a player settings plugin used to let players toggle common chat
 
 The default settings menu ships with these toggles:
 
-- `PUBLIC_CHAT` - Enable or disable public chat visibility.
-- `PRIVATE_MESSAGE` - Enable or disable private messages.
+- `PUBLIC_CHAT` - Enable or disable public chat visibility. Used by `MarisChat`.
+- `PRIVATE_MESSAGE` - Enable or disable private messages. Used by `MarisChat`.
 - `HOTBAR_SERVER_MESSAGES` - Show or hide hotbar server messages.
-- `PAY_ALERTS` - Enable or disable payment alerts.
+- `PAY_ALERTS` - Enable or disable payment alerts. Used by `MarisCore`.
 - `CHAT_SERVER_MESSAGE` - Show or hide chat-based server broadcasts.
-- `AUCTION_TOGGLE` - Enable or disable auction alerts.
+- `AUCTION_TOGGLE` - Enable or disable auction alerts. Used by `MarisAuction`.
 - `TOTEM_PARTICLES` - Show or hide totem particle effects.
 - `EXPLOSION_PARTICLES` - Show or hide explosion particles.
 - `EXPLOSION_SOUNDS` - Enable or disable explosion sounds.
-- `AUCTION_FAST_BUY` - Allow quick buy flow in auction menus.
+- `AUCTION_FAST_BUY` - Allow quick buy flow in auction menus. Used by `MarisAuction`.
 - `CHAINMAIL_SPAWN` - Toggle the chainmail spawn effect or state used by the server.
 - `DISABLE_MOB_SPAWN` - Personal toggle related to mob spawn handling where your server uses it.
 - `PLAYER_VISIBILITY` - Show or hide other players.
 - `COMMAND` - Dispatch a configured command shortcut from the settings menu.
 - `TPAGUI_TOGGLE` - Enable or disable the TPA menu flow.
 - `SOUND_NOTIFICATIONS` - Enable or disable general sound notifications.
-- `ORDER_NOTIFICATION` - Enable or disable order market notifications.
-- `AUCTION_FAST_SELL` - Allow quick sell flow in auction menus.
-- `REQUEST_DUEL` - Accept or block duel requests.
-- `TPA_TOGGLE` - Accept or block `/tpa` requests.
-- `TPAHERE_TOGGLE` - Accept or block `/tpahere` requests.
-- `TEAM_TOGGLE` - Accept or block team invites.
-- `PAY_TOGGLE` - Accept or block payments.
-- `TEAM_CHAT` - Enable or disable team chat mode.
-- `WORTHT_TOGGLE` - Show or hide worth display support used by your economy flow.
-- `AFTER_SONG_DUELS` - Enable or disable post-duel song playback.
+- `ORDER_NOTIFICATION` - Enable or disable order market notifications. Used by `MarisOrder`.
+- `AUCTION_FAST_SELL` - Allow quick sell flow in auction menus. Used by `MarisAuction`.
+- `REQUEST_DUEL` - Accept or block duel requests. Used by `MarisDuels`.
+- `TPA_TOGGLE` - Accept or block `/tpa` requests. Used by `MarisTpa`.
+- `TPAHERE_TOGGLE` - Accept or block `/tpahere` requests. Used by `MarisTpa`.
+- `TEAM_TOGGLE` - Accept or block team invites. Used by `MarisTeam`.
+- `PAY_TOGGLE` - Accept or block payments. Used by `MarisCore`.
+- `TEAM_CHAT` - Enable or disable team chat mode. Used by `MarisTeam`.
+- `WORTHT_TOGGLE` - Show or hide worth display support. Used by `MarisWorth`.
+- `AFTER_SONG_DUELS` - Enable or disable post-duel song playback. Used by `MarisDuels`.
 
-Some features depend on other Maris plugins being installed and actually reading the stored toggle.
+If a feature is not mapped to another plugin above, it is handled directly by MarisSettings itself or is meant as a generic local toggle.
 
 ## Requirements
 
