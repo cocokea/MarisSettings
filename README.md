@@ -55,6 +55,23 @@ If a feature is not mapped to another plugin above, it is handled directly by Ma
 4. Review the GUI item list in `config.yml` if you want to change enabled features, slots, materials, or permissions.
 5. Restart the server.
 
+## Quick Setup
+
+1. Start the server once to generate database and GUI data.
+2. Open `config.yml`.
+3. Remove or disable GUI items for features your server does not use.
+4. Keep only integrations that are relevant to your current Maris plugin stack.
+5. Restart the server and test `/settings` with a normal player account.
+
+## How To Read Feature Ownership
+
+Use the mapping in this README like this:
+
+- if a feature says `Used by MarisAuction`, that means another plugin reads the stored toggle
+- if no external plugin is listed, the feature is internal to MarisSettings or generic to the current server setup
+
+Do not assume every visible toggle is active on every server.
+
 ## Commands
 
 - `/settings` - Open player settings.
@@ -73,6 +90,12 @@ MarisSettings supports:
 - MySQL
 
 The backend is selected in `config.yml` under `database.type`.
+
+## Common Mistakes
+
+- Leaving unrelated features in the GUI confuses players.
+- Renaming a feature key breaks integrations if another plugin expects the original key.
+- Enabling MySQL without filling credentials causes storage failures.
 
 ## Notes
 
